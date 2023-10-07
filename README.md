@@ -12,5 +12,8 @@ The differences that the tool computes are
    - updates (change in the value of a key)
    - reorders (change in the position of a  key)
 
-The program has Jason as its only dependency. Jason is used for parsing the files into a Jason.OrderedObject so that reorders can be tracked.
+The tool has Jason as its only dependency. Jason is used for parsing the files into a Jason.OrderedObject so that reorders can be tracked.
 
+The tool assumes that both files supplied are the same structure as the example files.
+
+Executable can be built with escript using mix deps.get then mix escript.build.

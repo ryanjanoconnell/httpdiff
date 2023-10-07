@@ -343,7 +343,7 @@ defmodule HttpDiff do
   end
 
   def print_patch(%{type: :delete, path: path, old_value: old_value}) do
-    IO.ANSI.format([:red, "- #{format_path(path)} #{old_value}"])
+    IO.ANSI.format([:red, "- #{format_path(path)} #{old_value}"]) |> IO.puts()
     IO.puts("")
   end
 
