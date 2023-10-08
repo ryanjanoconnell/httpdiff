@@ -397,7 +397,7 @@ defmodule HttpDiff do
     diff_body(http1, http2, "response") |> print_patches("RESPONSE BODY")
     IO.puts("------  END ------")
     # Present options again
-    # main_loop(http_list1, http_list2)
+    main_loop(http_list1, http_list2)
     :ok
   end
 
