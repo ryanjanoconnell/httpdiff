@@ -1,0 +1,310 @@
+[
+    {
+    "http_version": "HTTP/2.0",
+    "request": {
+      "body": null,
+      "headers": [
+        {
+          "name": "Host",
+          "value": "thebank.teller.dev"
+        },
+        {
+          "name": "Accept",
+          "value": "application/xml"
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Connection",
+          "value": "close"
+        },
+        {
+          "name": "Cookie",
+          "value": "AppVersion=13.3.8;AppType=Android;AI=A3254415;"
+        },
+        {
+          "name": "User-Agent",
+          "value": "TheBankMobile/13.3.8 (Android; OS 9)"
+        },
+        {
+          "name": "Accept-Language",
+          "value": "en-UK;q=0.9"
+        },
+        {
+          "name": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "name": "Accept-Encoding",
+          "value": "gzip, deflate"
+        }
+      ],
+      "method": "GET",
+      "url": "https://thebank.teller.dev/api/apps/A3254415/configuration?osVersion=9&appType=Android&appVersion=13.3.8"
+    },
+    "response": {
+      "body": "{\"appId\":\"A3254415\",\"appName\":\"The Bank Dev\",\"properties\":{\"balanceEnablement\":\"Disabled\",\"showAccountNumberEnablement\":\"Enabled\",\"faceIdAuthEnablement\":\"Disabled\",\"billingAndPaymentsEnablement\":\"Enabled\",\"chatEnablement\":\"Enabled\",\"zelleEnablement\":\"Enabled\",\"rewardsEnablement\":\"Disabled\",\"sessionTimeout\":360}}",
+      "headers": [
+        {
+          "name": "Cache-Control",
+          "value": "private, max-age=10"
+        },
+        {
+          "name": "Pragma",
+          "value": "public"
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "name": "Set-Cookie",
+          "value": "CorrelationId=d8139c04-599b-4fdc-9b2e-940a9bb5cdef;HttpOnly;Secure"
+        },
+        {
+          "name": "X-Content-Type-Options",
+          "value": "sniff"
+        },
+        {
+          "name": "X-Frame-Options",
+          "value": "allow"
+        },
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        },
+        {
+          "name": "Content-Security-Policy",
+          "value": "default-src 'none';style-src 'self';script-src 'self'; frame-ancestors 'none'"
+        },
+        {
+          "name": "X-Xss-Protection",
+          "value": "0; mode=block"
+        },
+        {
+          "name": "Date",
+          "value": "Wed, 09 Aug 2023 11:38:30 GMT"
+        },
+        {
+          "name": "Content-Length",
+          "value": "6025"
+        },
+        {
+          "name": "X-New-Header",
+          "value": "TestValue"
+        },
+        {
+          "name": "Set-Cookie",
+          "value": "persist__data=TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQs; path=/; Httponly; Secure"
+        }
+      ],
+      "status_code": 201,
+      "status_text": "Created"
+    }
+    },
+
+    {
+    "http_version": "HTTP/2.0",
+    "request": {
+      "body": null,
+      "headers": [
+        {
+          "name": "Host",
+          "value": "newbank.teller.dev"
+        },
+        {
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Connection",
+          "value": "close"
+        },
+        {
+          "name": "Cookie",
+          "value": "AppVersion=14.0.0;AppType=Android;AI=A3454416;"
+        },
+        {
+          "name": "User-Agent",
+          "value": "NewBankMobile/14.0.0 (Android; OS 10)"
+        },
+        {
+          "name": "Accept-Language",
+          "value": "en-CA;q=0.9"
+        },
+        {
+          "name": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "name": "Accept-Encoding",
+          "value": "gzip, deflate"
+        }
+      ],
+      "method": "GET",
+      "url": "https://newbank.teller.dev/api/apps/A3454416/configuration?osVersion=10&appType=Android&appVersion=14.0.0"
+    },
+    "response": {
+      "body": "{\"appId\":\"A3454416\",\"appName\":\"New Bank Dev\",\"properties\":{\"balanceEnablement\":\"Disabled\",\"showAccountNumberEnablement\":\"Enabled\",\"faceIdAuthEnablement\":\"Disabled\",\"billingAndPaymentsEnablement\":\"Enabled\",\"chatEnablement\":\"Enabled\",\"zelleEnablement\":\"Enabled\",\"rewardsEnablement\":\"Disabled\",\"sessionTimeout\":360, \"nestedObject\":{\"level1\":{\"key1\":\"value1\",\"key2\":\"value2\"},\"level2\":{\"subKey1\":\"subValue1\",\"subKey2\":\"subValue2\"}}}}",
+      "headers": [
+        {
+          "name": "Cache-Control",
+          "value": "private, max-age=15"
+        },
+        {
+          "name": "Pragma",
+          "value": "public"
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "name": "Set-Cookie",
+          "value": "CorrelationId=d9188c04-510b-4ffe-9c3e-951a9cd6eabc;HttpOnly;Secure"
+        },
+        {
+          "name": "X-Content-Type-Options",
+          "value": "sniff"
+        },
+        {
+          "name": "X-Frame-Options",
+          "value": "allow"
+        },
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        },
+        {
+          "name": "Content-Security-Policy",
+          "value": "default-src 'self';style-src 'self';script-src 'self'; frame-ancestors 'self'"
+        },
+        {
+          "name": "X-Xss-Protection",
+          "value": "0; mode=block"
+        },
+        {
+          "name": "Date",
+          "value": "Thu, 10 Aug 2023 12:38:30 GMT"
+        },
+        {
+          "name": "Content-Length",
+          "value": "6525"
+        },
+        {
+          "name": "X-New-Header",
+          "value": "AnotherTestValue"
+        }
+      ],
+      "status_code": 202,
+      "status_text": "Accepted"
+    }
+    },
+    {
+    "http_version": "HTTP/2.0",
+    "request": {
+      "body": null,
+      "headers": [
+        {
+          "name": "Host",
+          "value": "newbank.teller.dev"
+        },
+        {
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Connection",
+          "value": "close"
+        },
+        {
+          "name": "Cookie",
+          "value": "AppVersion=14.0.0;AppType=Android;AI=A3454416;"
+        },
+        {
+          "name": "User-Agent",
+          "value": "NewBankMobile/14.0.0 (Android; OS 10)"
+        },
+        {
+          "name": "Accept-Language",
+          "value": "en-CA;q=0.9"
+        },
+        {
+          "name": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "name": "Accept-Encoding",
+          "value": "gzip, deflate"
+        }
+      ],
+      "method": "GET",
+      "url": "https://newbank.teller.dev/api/apps/A3454416/configuration?osVersion=10&appType=Android&appVersion=14.0.0"
+    },
+    "response": {
+      "body": "{\"appName\":\"New Bank Dev\",\"nestedObject\":{\"level2\":{\"subKey2\":\"subValue2\",\"subKey1\":\"subValue1\"},\"level1\":{\"key2\":\"value2\",\"key1\":\"value1\"}},\"appId\":\"A3454416\",\"properties\":{\"faceIdAuthEnablement\":\"Disabled\",\"zelleEnablement\":\"Enabled\",\"showAccountNumberEnablement\":\"Enabled\",\"rewardsEnablement\":\"Disabled\",\"sessionTimeout\":360,\"chatEnablement\":\"Enabled\",\"balanceEnablement\":\"Disabled\",\"billingAndPaymentsEnablement\":\"Enabled\"}}",
+      "headers": [
+        {
+          "name": "Cache-Control",
+          "value": "private, max-age=15"
+        },
+        {
+          "name": "Pragma",
+          "value": "public"
+        },
+        {
+          "name": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "name": "Set-Cookie",
+          "value": "CorrelationId=d9188c04-510b-4ffe-9c3e-951a9cd6eabc;HttpOnly;Secure"
+        },
+        {
+          "name": "X-Content-Type-Options",
+          "value": "sniff"
+        },
+        {
+          "name": "X-Frame-Options",
+          "value": "allow"
+        },
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        },
+        {
+          "name": "Content-Security-Policy",
+          "value": "default-src 'self';style-src 'self';script-src 'self'; frame-ancestors 'self'"
+        },
+        {
+          "name": "X-Xss-Protection",
+          "value": "0; mode=block"
+        },
+        {
+          "name": "Date",
+          "value": "Thu, 10 Aug 2023 12:38:30 GMT"
+        },
+        {
+          "name": "Content-Length",
+          "value": "6525"
+        },
+        {
+          "name": "X-New-Header",
+          "value": "AnotherTestValue"
+        }
+      ],
+      "status_code": 202,
+      "status_text": "Accepted"
+    }
+}
+]
