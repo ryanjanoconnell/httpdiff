@@ -376,10 +376,7 @@ defmodule HttpDiff do
     end
   end
   
-  def compute_diffs_and_output(path1, path2) do
-    # Decode provided files 
-    http_list1 = decode_json_file(path1)
-    http_list2 = decode_json_file(path2)
+  def main_loop(http_list1, http_list2) do
     # Present options to user
     print_options(http_list1)
     print_options(http_list2)
@@ -397,14 +394,16 @@ defmodule HttpDiff do
     diff_headers(http1, http2, "response") |> print_patches("RESPONSE HEADERS")
     diff_body(http1, http2, "response") |> print_patches("RESPONSE BODY")
     IO.puts("------  END ------")
-    :ok
+    # Present options again
+    main_loop(http_list1, http_list2)
   end
 
   def main(argv) do
     case argv do
       [path1, path2] ->
-        compute_diffs_and_output(path1, path2)
-        
+        http_list1 = decode_json_file(path1)
+	http_list2 = decode_json_file(path2)
+	main_loop(http_list1, http_list2)
       _ ->
         IO.puts("Usage: httpdiff <file1> <file2>")
     end
