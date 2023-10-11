@@ -25,7 +25,7 @@ defmodule HttpDiff.MixProject do
   end
 
   defp escript do
-    [main_module: HttpDiff]
+    [main_module: HttpDiff, path: "./_build/http_diff"]
   end
   
 end
