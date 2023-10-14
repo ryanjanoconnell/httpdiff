@@ -15,7 +15,7 @@ defmodule HttpDiff do
   A patch is a map that contains the type of patch, path to the patch, the old value and the new value.
   For example if a key/value pair in a nested object was deleted then its patch would look like this:
   
-  iex> %{type: :delete, path: ["address" "postcode"], old_value: 10222, new_value: nil}
+  iex> %{type: :delete, path: ["address", "postcode"], old_value: 10222, new_value: nil}
   
   ## Struct
   The struct of the module is how the different patches that are computed by diff/4 are stored for
@@ -398,7 +398,6 @@ defmodule HttpDiff do
     IO.puts("------  END ------")
     # Present options again
     main_loop(http_list1, http_list2)
-    :ok
   end
 
   def main(argv) do
@@ -413,6 +412,7 @@ defmodule HttpDiff do
   end
   
 end
+
 
 
 
