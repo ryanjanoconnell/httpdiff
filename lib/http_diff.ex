@@ -86,12 +86,10 @@ defmodule HttpDiff do
   end
 
   @doc """
-  If both values are objects then dive into nested objects and diff them
+  If both values are maps/Jason.OrderedObjects then dive into nested objects and diff them
   """
   def check_and_handle_recur(patches = %HttpDiff{}, path, key, val_a, val_b) do
     case {val_a, val_b} do
-      {%Jason.OrderedObject{}, %Jason.OrderedObject{}} ->
-	diff(patches, path ++ [key], val_a, val_b)
       {%{}, %{}} ->
 	diff(patches, path ++ [key], val_a, val_b)
       _ ->
